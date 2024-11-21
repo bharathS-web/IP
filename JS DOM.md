@@ -98,11 +98,14 @@ element.addEventListener(event, function, useCapture);
 </html>
 ```
 
-## 🎨 Dynamic Styling and Animations
+## 🎨 Dynamic Styling 
 
-### Using setInterval() for Animations
+### Using setInterval() and clearInterval()
+
+- setInterval Executes a function repeatedly at a fixed interval.
+
+- Continues until explicitly cleared using clearInterval.
 ```javascript
-// Change text color every second
 // Change text color every second
 const interval = setInterval(() => {
   const text = document.getElementById('text');
