@@ -40,9 +40,9 @@ element.addEventListener(event, function, useCapture);
 - `function`: Callback function to execute
 - `useCapture`: Optional boolean for event phase (default: false)
 
-### 🖱️ Common Events
+###  Common Events
 
-#### Mouse Events
+#### 🖱️ Mouse Events
 - `click`: Triggered when an element is clicked
 - `mouseover`: When mouse enters an element
 - `mouseout`: When mouse leaves an element
@@ -54,6 +54,14 @@ element.addEventListener(event, function, useCapture);
 - `submit`: When a form is submitted
 - `reset`: When a form is reset
 - `change`: When element value changes
+
+#### ⌨️Keyboard Events
+
+- `keydown`: Triggered when a key is pressed down.
+
+- `keypress`: Triggered when a key that produces a character is pressed (deprecated in modern browsers).
+
+- `keyup`: Triggered when a key is released.
 
 ## 💡 Simple Event Handling Examples
 
