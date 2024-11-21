@@ -222,3 +222,52 @@ console.log(currentDate.getFullYear());
 console.log(currentDate.getMonth());
 console.log(currentDate.getDate());
 ```
+
+
+
+# Simple example 
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Page</title>
+</head>
+<body>
+  <div>
+    <h1>Simple List Manager</h1>
+    <ul id="dataList"></ul>
+    <input type="text" id="inputBox" placeholder="Enter item" />
+    <button onclick="addItem()">Add to List</button>
+  </div>
+
+  <script>
+    // Function to add item to the list
+    function addItem() {
+      const inputBox = document.getElementById("inputBox");
+      const dataList = document.getElementById("dataList");
+
+      // Get the input value
+      const item = inputBox.value.trim();
+
+      // Check if the input is not empty
+      if (item) {
+        // Create a new list item
+        const listItem = document.createElement("li");
+        listItem.textContent = item;
+
+        // Add the item to the list
+        dataList.appendChild(listItem);
+
+        // Clear the input box
+        inputBox.value = "";
+      } else {
+        alert("Please enter an item.");
+      }
+    }
+  </script>
+</body>
+</html>
+```
