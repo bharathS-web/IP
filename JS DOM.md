@@ -103,10 +103,14 @@ element.addEventListener(event, function, useCapture);
 ### Using setInterval() for Animations
 ```javascript
 // Change text color every second
-setInterval(function() {
-    const text = document.getElementById('text');
-    text.style.color = text.style.color === 'red' ? 'green' : 'red';
+// Change text color every second
+const interval = setInterval(() => {
+  const text = document.getElementById('text');
+  text.style.color = text.style.color === 'red' ? 'green' : 'red';
 }, 1000);
+
+// Stop after 10 seconds
+setTimeout(() => clearInterval(interval), 10000);
 ```
 
 ## 🔄 Event Bubbling
